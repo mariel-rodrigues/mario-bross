@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="placeholder" href="https://fonts.googleapis.com">
+    <link rel= "preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="cogumelo-icon.png" type="image/x-icon">
+   <title>Super Mario bross  </title>
+</head>
+
+<body>
+  <div class="caixa-video-mario">
+    <video src="video.mp4" autoplay muted loop></video>
+    <div class="mascara-video"></div>
+  </div>
+
+  <div class="caixa-principal">
+    <img src="logo.png" alt="logo do super mario" class="logo-mario">
+    <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!</p>
+    <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos
+        ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a
+        vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+    <button onclick="cliqueiNoBotao()">Fale conosco</button>
+</div>
+  
+ <img src="mario.png" alt="logo Mario e Luigi" class="imagem-mario-luigi">
+
+  <form class="fale-conosco"  action="https://formsubmit.co/marielamancio1@gmail.com" method="POST" >
+    <input placeholder="Seu Nome"  type="text" name="Nome">
+    <input  placeholder="telefone"  type="tel" name="telefone">
+    <textarea placeholder="Digete seu problema aqui" name="infor"></textarea>
+    <button onclick="sumirFormulario">enviar formulario</button>
+  </form>
+
+  <div class="mascara-from"></div>
+  <br>
+<div class="maps">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.661928788923!2d-46.864574725417235!3d-23.508683478836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf022b0c1067b3%3A0xdb14d689a6a46df8!2sRua%20Nossa%20Senhora%20da%20Escada%2C%20181%20-%20Vila%20Nossa%20Sra.%20da%20Escada%2C%20Barueri%20-%20SP%2C%2006440-080!5e0!3m2!1spt-BR!2sbr!4v1700269954847!5m2!1spt-BR!2sbr"  style="border:80;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</body>
+<script>
+  let formulario = document.querySelector(".fale-conosco")
+  let mascara = document.querySelector(".mascara-form")
+
+  function cliqueiNoBotao(){
+    formulario.style.left = "700px"
+    mascara.style.visibility = "visible"
+  }
+
+  function sumirFormulario(){
+    formulario.style.left = "300px"
+    mascara.style.visibility = "hidden"
+  }
+  
+</script>
+</html>
